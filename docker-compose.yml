@@ -1,0 +1,6 @@
+---
+app:
+  build: .
+  command: "casperjs /app/test.js http://info.meteor.com/blog/two-weeks-with-react-and-meteor hs-responsive-embed-iframe scr.png 20000"
+  volumes:
+    -  ./data:/data
