@@ -1,6 +1,6 @@
 ---
 app:
   build: .
-  command: "casperjs /app/test.js http://info.meteor.com/blog/two-weeks-with-react-and-meteor hs-responsive-embed-iframe scr.png 20000"
+  command: "casperjs /app/test.js https://www.washingtonpost.com/news/powerpost/wp/2015/06/26/the-daily-202-house-gop-leadership-bad-at-retribution/ .twitter-tweet-rendered scr.png 20000"
   volumes:
     -  ./data:/data
