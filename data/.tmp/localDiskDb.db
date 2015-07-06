@@ -1,0 +1,42 @@
+{
+  "data": {
+    "powerpost": [
+      {
+        "page_url": "https://www.washingtonpost.com/news/powerpost/wp/2015/06/26/the-daily-202-house-gop-leadership-bad-at-retribution/",
+        "createdAt": "2015-07-06T21:29:48.720Z",
+        "updatedAt": "2015-07-06T21:29:48.720Z",
+        "id": 1
+      }
+    ]
+  },
+  "schema": {
+    "powerpost": {
+      "images": {
+        "type": "array"
+      },
+      "html": {
+        "type": "text"
+      },
+      "config": {
+        "type": "json"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "powerpost": {
+      "id": 1
+    }
+  }
+}

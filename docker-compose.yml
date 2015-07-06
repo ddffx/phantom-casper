@@ -1,6 +1,13 @@
 ---
 app:
   build: .
-  command: "casperjs /app/test.js https://www.washingtonpost.com/news/powerpost/wp/2015/06/26/the-daily-202-house-gop-leadership-bad-at-retribution/ .twitter-tweet-rendered scr.png 20000"
+  # command: "casperjs /app/test.js https://www.washingtonpost.com/news/powerpost/wp/2015/06/26/the-daily-202-house-gop-leadership-bad-at-retribution/ .twitter-tweet-rendered scr.png 20000"
+  command: node /powerpost-email/app.js
+  ports:
+    - "8080:1337"
   volumes:
     -  ./data:/data
+  environment:
+    NODE_ENV: development
+  env_file: .env
+

@@ -29,7 +29,7 @@ if (!pageUrl || !filename || !/\.(png|jpg|pdf)$/i.test(filename)) {
 var twt_ids, links;
 casper.start(pageUrl, function() {
     var raw_html = this.download(pageUrl, 'src.html');
-    // this.echo("Saved raw html of " + pageUrl);
+    this.echo("Saved raw html of " + pageUrl);
     twt_ids = this.evaluate(function() {
         var elements = __utils__.findAll('#article-body iframe.twitter-tweet');
         return elements.map(function(e) {
@@ -39,7 +39,7 @@ casper.start(pageUrl, function() {
 
 
 });
-
+// casper.run();
 casper.run(function() {
     this.echo(JSON.stringify(twt_ids));
     // this.echo(this.getHTML());
